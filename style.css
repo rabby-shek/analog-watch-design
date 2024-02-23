@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.watch-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.watch-body {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.glass{
+    background-image: linear-gradient(transparent,#ececec93,#fff,#ececec33,#bbb8b879);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+.first-gear {
+    background-color: rgb(251, 255, 0);
+  margin-top: 70px;
+  margin-left: 50px;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid rgb(36, 32, 32);
+  border-bottom: 1px solid rgb(41, 40, 40);
+  animation: rotatefirstgear 5s linear infinite;
+}
+
+.second-gear {
+    background-color: rgb(251, 255, 0);
+  margin-top: 203px;
+  margin-left: 120px;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid rgb(36, 32, 32);
+  border-bottom: 1px solid rgb(80, 78, 78);
+  border-top: 1px solid rgb(80, 78, 78);
+  animation: rotatesecondgear 5s linear infinite;
+}
+@keyframes rotatefirstgear {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotatesecondgear {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.third-gear {
+    
+  margin-top: 31px;
+  margin-left: 30px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+  height: 340px;
+  width: 340px;
+  border-radius: 50%;
+  border: 1px solid rgb(39, 36, 36);
+  border-top: 1px solid rgb(131, 127, 127);
+  border-bottom: 1px solid rgb(131, 127, 127);
+  animation: rotatethirdgear 5s linear infinite;
+}
+@keyframes rotatethirdgear {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.fourth-gear {
+  position: absolute;
+  background-color: rgb(251, 255, 0);
+  height: 100px;
+  width: 100px;
+  margin-top: 96px;
+  margin-left: 200px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  border: 1px solid black;
+  border-top: 1px solid rgb(124, 124, 124);
+  border-bottom: 1px solid rgb(124, 124, 124);
+  animation: rotatefourthgear 5s linear infinite;
+}
+
+@keyframes rotatefourthgear {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.fifth-gear {
+  position: absolute;
+  background-color: rgb(251, 255, 0);
+  height: 100px;
+  width: 100px;
+  margin-top: 177px;
+  margin-left: 259px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  border: 1px solid black;
+  border-top: 1px solid rgb(124, 124, 124);
+  border-bottom: 1px solid rgb(124, 124, 124);
+  animation: rotatefifthgear 5s linear infinite;
+}
+@keyframes rotatefifthgear {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tooth-1 {
+  position: absolute;
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  margin: 42px 0px 0px 0px;
+  transform: rotate(74deg);
+}
+.watch-min {
+  position: fixed;
+  width: 2px;
+  height: 339px;
+  background-color: black;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(hsl(0, 0%, 100%), #000);
+}
+
+
+.number {
+  position: absolute;
+  font-size: 18px;
+  color: black;
+}
+
+.number-1,
+.number-2,
+.number-3,
+.number-4,
+.number-5,
+.number-6,
+.number-7,
+.number-8,
+.number-9,
+.number-10,
+.number-11,
+.number-12 {
+  position: absolute;
+  font-size: 18px;
+  color: black;
+}
+
+.number-1 {
+  top: 30px;
+  left: 73%;
+  transform: translateX(-50%);
+}
+
+.number-2 {
+  top: 97px;
+  left: 89%;
+  transform: translateX(-50%);
+}
+
+.number-3 {
+  top: 50%;
+  left: calc(100% - 25px);
+  transform: translateY(-50%);
+}
+
+.number-4 {
+  bottom: 92px;
+  left: 89%;
+  transform: translateX(-50%);
+}
+
+.number-5 {
+  bottom: 30px;
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+.number-6 {
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.number-7 {
+  bottom: 30px;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.number-8 {
+  bottom: 91px;
+  left: 11%;
+  transform: translateX(-50%);
+}
+
+.number-9 {
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.number-10 {
+  top: 99px;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.number-11 {
+  top: 30px;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.number-12 {
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.current-hour {
+    font-weight: bold;
+}
